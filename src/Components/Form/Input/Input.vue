@@ -15,5 +15,11 @@ function updateModelValue(event: Event) {
 </script>
 
 <template>
-	<input :value="modelValue" @input="updateModelValue" />
+	<input class="input" :value="modelValue" @input="updateModelValue" />
 </template>
+
+<style lang="postcss" setup>
+.input {
+	appearance: none;
+}
+</style>

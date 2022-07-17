@@ -55,7 +55,7 @@ const props = defineProps<{
 	& .heading__image {
 		object-fit: cover;
 		object-position: top;
-		width: 100%;
+		width: 100vw;
 		height: 25vw;
 		min-height: 300px;
 	}

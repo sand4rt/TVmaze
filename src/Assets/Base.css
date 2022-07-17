@@ -16,7 +16,7 @@
 	--header-zindex: 200;
 	--show-category-zindex: 100;
 	--header-height: 68px;
-	--container-padding: 2vw;
+	--container-padding: 3vw;
 }
 
 *,
@@ -33,8 +33,9 @@ body {
 	color: var(--white);
 	background: var(--neutral7);
 	line-height: 1.6;
-	font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-	Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
 	font-size: 15px;
 	text-rendering: optimizelegibility;
 	-webkit-font-smoothing: antialiased;
