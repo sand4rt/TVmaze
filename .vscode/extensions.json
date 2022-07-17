@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"Vue.volar",
+		"ms-playwright.playwright",
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"cpylua.language-postcss",
+		"stylelint.vscode-stylelint"
+	]
+}

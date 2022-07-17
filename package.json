@@ -1,0 +1,52 @@
+{
+	"name": "@tvmaze/ui",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "vite",
+		"preview": "vite preview",
+		"build": "vue-tsc --noEmit && vite build",
+		"lint": "yarn lint:css && yarn lint:js",
+		"lint:css": "stylelint \"src/**/*.{vue,css}\"",
+		"lint:js": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+		"test:unit": "playwright test -c playwright-ct.config.ts",
+		"test:e2e": "playwright test -c playwright.config.ts"
+	},
+	"dependencies": {
+		"@vueuse/core": "^8.9.3",
+		"@vueuse/head": "^0.7.6",
+		"vue": "^3.2.37",
+		"vue-query": "^1.25.0",
+		"vue-router": "^4.0.16"
+	},
+	"devDependencies": {
+		"@playwright-testing-library/test": "4.3.0-beta.1",
+		"@playwright/experimental-ct-vue": "^1.24.0-alpha-jul-14-2022",
+		"@playwright/test": "^1.24.0-beta-1657816946000",
+		"@rushstack/eslint-patch": "^1.1.4",
+		"@vitejs/plugin-vue": "^2.3.3",
+		"@vue/eslint-config-prettier": "^7.0.0",
+		"@vue/eslint-config-typescript": "^11.0.0",
+		"autoprefixer": "^10.4.7",
+		"cross-fetch": "^3.1.5",
+		"eslint": "^8.19.0",
+		"eslint-plugin-import": "^2.24.0",
+		"eslint-plugin-playwright": "^0.9.0",
+		"eslint-plugin-unused-imports": "^1.1.1",
+		"eslint-plugin-vue": "^9.1.1",
+		"eslint-plugin-vuejs-accessibility": "^1.2.0",
+		"playwright": "^1.23.3",
+		"postcss-html": "^1.5.0",
+		"postcss-nested": "^5.0.6",
+		"prettier": "^2.7.1",
+		"stylelint": "^14.9.1",
+		"stylelint-config-html": "^1.0.0",
+		"stylelint-config-prettier": "^9.0.3",
+		"stylelint-config-recommended-vue": "^1.4.0",
+		"stylelint-config-standard": "^26.0.0",
+		"typescript": "~4.7.4",
+		"vite": "^2.9.13",
+		"vite-plugin-vue-type-imports": "^0.2.0",
+		"vue-tsc": "^0.38.2"
+	}
+}
