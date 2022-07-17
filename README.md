@@ -1,5 +1,7 @@
 # @tvmaze
 
+View live: https://sand4rt.github.io/TVmaze
+
 ## Table of contents
 
 This project includes a `docs` folder with more details on:
