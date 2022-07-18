@@ -49,11 +49,6 @@ useInfiniteScroll(window, loadMoreData, {
 <style lang="postcss" scoped>
 .show-category {
 	position: relative;
-	margin-top: 34px;
-
-	&:first-of-type {
-		margin-top: 0;
-	}
 }
 
 .show-category__name {
@@ -80,5 +75,10 @@ useInfiniteScroll(window, loadMoreData, {
 	margin: 0 var(--container-padding);
 	display: flex;
 	gap: 8px;
+	margin-top: 34px;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
 }
 </style>
