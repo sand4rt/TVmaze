@@ -1,4 +1,4 @@
-import { tvMaze } from '../../Clients/TVmazeClient/Index';
+import { tvMaze } from '../../Clients/TVmazeClient';
 import type { ShowDto } from '../../Clients/TVmazeClient/ShowDto';
 import type { Page } from '@playwright/test';
 import { expect, test } from '../../TestHelpers/TestingLibrary';

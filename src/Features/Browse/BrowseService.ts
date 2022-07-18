@@ -2,7 +2,7 @@ import { useQuery } from 'vue-query';
 import type { Ref } from 'vue';
 import type { BrowseCategory } from '@/Features/Browse/BrowseCategoriesProps';
 import type { ShowDto } from '@/Clients/TVmazeClient/ShowDto';
-import { tvMaze } from '../../Clients/TVmazeClient/Index';
+import { tvMaze } from '../../Clients/TVmazeClient';
 import { QueryKey } from '../../Clients/QueryClient';
 import type { BrowseShowProps } from './BrowseShowProps';
 
