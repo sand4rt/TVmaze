@@ -1,12 +1,12 @@
 import { expect, test } from './TestHelpers/TestingLibrary';
 
 // TODO: Refactor page.locator with queries / testing library
-test('browsing, viewing and searching', async ({ page, queries }) => {
+test('browsing, viewing and searching', async ({ page }) => {
 	await page.goto('/');
 
 	// Wait for data to load
-	await queries
-		.queryByText('Drama')
+	await page
+		.locator('text=Drama')
 		.waitFor({ state: 'visible', timeout: 40000 });
 
 	await page.evaluate(() => window.scrollTo(4228, 2741));

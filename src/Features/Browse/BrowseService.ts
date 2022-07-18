@@ -45,6 +45,18 @@ export function groupShowsByCategory(data: ShowDto[]): BrowseCategory[] {
 
 export function useShowsByCategories() {
 	async function query() {
+		async function getFirstBatch(batchSize: number) {
+			const batch = [];
+			for (let i = 0; i < batchSize; i++) {
+				batch.push(tvMaze.getShowsByPage(i));
+			}
+
+			const responses = await Promise.all(batch);
+			const dataset = responses.map((data) => data.json());
+			const data = await Promise.all(dataset);
+			return data.flat();
+		}
+
 		async function recurse(page = 0): Promise<ShowDto[]> {
 			const response = await tvMaze.getShowsByPage(page);
 
@@ -56,9 +68,11 @@ export function useShowsByCategories() {
 			return [...previous, ...current];
 		}
 
-		const data = await recurse();
+		const FIRST_BATCH_SIZE = 250;
+		const firstBatchData = await getFirstBatch(FIRST_BATCH_SIZE);
+		const data = await recurse(FIRST_BATCH_SIZE);
 
-		return groupShowsByCategory(data);
+		return groupShowsByCategory([...firstBatchData, ...data]);
 	}
 
 	const FIFTEEN_MINUTES = 900_000;

@@ -8,7 +8,7 @@ test('get a show by show id', async () => {
 
 	const expected: SearchShowDto[] = [
 		{
-			score: 1.2019308,
+			score: expect.any(Number) as unknown as number,
 			show: {
 				id: 1871,
 				url: 'https://www.tvmaze.com/shows/1871/mr-robot',
