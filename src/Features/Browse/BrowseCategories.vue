@@ -25,9 +25,7 @@ function loadMoreData() {
 
 useInfiniteScroll(window, loadMoreData, {
 	distance: 1500,
-	// TODO: remove any type when https://github.com/vueuse/vueuse/pull/1929 is released
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	direction: 'right' as any,
+	direction: 'right',
 });
 </script>
 
