@@ -9,7 +9,7 @@ test('browsing, viewing and searching', async ({ page }) => {
 		.locator('text=Drama')
 		.waitFor({ state: 'visible', timeout: 40000 });
 
-	await page.evaluate(() => window.scrollTo(4228, 2741));
+	await page.evaluate(() => window.scrollTo(5470, 504));
 	await page.locator('img[alt="Show Millennium"]').click();
 	await expect(page).toHaveURL('/watch/6697');
 

@@ -21,7 +21,7 @@ test('get a show by show id', async () => {
 		officialSite: 'http://www.cbs.com/shows/under-the-dome/',
 		schedule: { time: '22:00', days: ['Thursday'] },
 		rating: { average: 6.5 },
-		weight: 98,
+		weight: expect.any(Number) as unknown as number,
 		network: {
 			id: 2,
 			name: 'CBS',
