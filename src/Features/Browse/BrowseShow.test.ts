@@ -28,7 +28,7 @@ test('display a link to the detail page', async ({ mount, queries }) => {
 	await expect(queries.getByRole('link')).toHaveAttribute('href', '/watch/7');
 });
 
-test('display fallback image not found', async ({ mount, queries }) => {
+test.fixme('display fallback image not found', async ({ mount, queries }) => {
 	await mount<BrowseShowProps>(Show, {
 		props: {
 			id: '7',
