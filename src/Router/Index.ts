@@ -49,7 +49,7 @@ const routes: RouteRecordRaw[] = [
 		component: () => import('../Features/Watch/WatchPage.vue'),
 	},
 	{
-		path: '/not-found',
+		path: '/:pathMatch(.*)*',
 		name: RouteName.NOT_FOUND,
 		component: () => import('../Features/NotFound/NotFoundPage.vue'),
 	},
