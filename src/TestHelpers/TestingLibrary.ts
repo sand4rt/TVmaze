@@ -7,6 +7,7 @@
  * Read more: https://playwright.dev/docs/test-fixtures
  */
 
+// eslint-disable-next-line no-restricted-imports
 import { test as baseTest, expect } from '@playwright/experimental-ct-vue';
 import {
 	locatorFixtures as fixtures,

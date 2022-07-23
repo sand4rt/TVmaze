@@ -20,13 +20,7 @@ module.exports = {
 		'selector-pseudo-element-no-unknown': [
 			true,
 			{
-				ignorePseudoElements: ['v-deep', 'v-global'],
-			},
-		],
-		'function-no-unknown': [
-			true,
-			{
-				ignoreFunctions: ['color-mod', 'alpha'],
+				ignorePseudoElements: ['deep', 'global'],
 			},
 		],
 	},

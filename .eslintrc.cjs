@@ -18,6 +18,9 @@ module.exports = {
 	],
 	rules: {
 		'vue/multi-word-component-names': 'off',
+		'vuejs-accessibility/form-control-has-label': 'off',
+		'vue/no-setup-props-destructure': 'off',
+		'vuejs-accessibility/label-has-for': 'off',
 		'unused-imports/no-unused-imports': 'error',
 		'unused-imports/no-unused-vars': [
 			'warn',
@@ -26,6 +29,13 @@ module.exports = {
 				varsIgnorePattern: '^_',
 				args: 'after-used',
 				argsIgnorePattern: '^_',
+			},
+		],
+		'no-restricted-imports': [
+			'error',
+			{
+				name: '@playwright/experimental-ct-vue',
+				message: 'Import from @/TestHelpers/TestingLibrary instead',
 			},
 		],
 	},
