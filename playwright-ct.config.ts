@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-imports */
 import type { PlaywrightTestConfig } from '@playwright/experimental-ct-vue';
 import { devices } from '@playwright/experimental-ct-vue';
 import { resolve } from 'path';
