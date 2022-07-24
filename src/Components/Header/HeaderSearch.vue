@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import Input from '@/Components/Form/Input/Input.vue';
 import { RouteName } from '@/Router';
 import { useFocus } from '@vueuse/core';
 import { computed, ref, watch } from 'vue';
@@ -37,7 +36,7 @@ const searchQuery = computed<string>(() => {
 			src="@/Assets/Icons/White/Search.svg"
 			alt="Search shows"
 		/>
-		<Input
+		<input
 			id="search"
 			class="search__input"
 			ref="searchInput"
@@ -63,9 +62,11 @@ const searchQuery = computed<string>(() => {
 	border: 1px solid rgb(255 255 255 / 85%);
 	width: 234px;
 	height: 36px;
+	font-size: 13px;
 	padding: 7px 14px 7px 37px;
 	caret-color: var(--primary);
 	outline: 0;
 	color: var(--white);
+	appearance: none;
 }
 </style>
