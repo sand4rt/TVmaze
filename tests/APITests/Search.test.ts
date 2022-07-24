@@ -24,7 +24,7 @@ test('get a show by show id', async () => {
 				officialSite: 'https://www.usanetwork.com/mr-robot',
 				schedule: { time: '22:00', days: ['Sunday'] },
 				rating: { average: 8.3 },
-				weight: 98,
+				weight: expect.any(Number) as unknown as number,
 				network: {
 					id: 30,
 					name: 'USA Network',
